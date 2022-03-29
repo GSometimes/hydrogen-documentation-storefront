@@ -13,7 +13,7 @@ import {
 // The `ProductCard` component accepts `products` as a prop.
 export default function ProductCard({product}) {
   // The product card displays the first product variant.
-  const firstVariant = product.variants?.edges[0]?.node;
+  const firstVariant = product.variants?.edges[0].node;
 
   // Return the first variant of the product. The product card
   // links to a product details page (specified by the product handle)

@@ -1,7 +1,7 @@
-// Import the `ProductCard` shared component so that it's accessible to `ProductList`.
+// Import the `ProductCard` shared component so that it's accessible to `ProductList`
 import ProductCard from './ProductCard';
 
-// The `ProductList` component accepts `products` as a prop.
+// The `ProductList component accepts `products as a prop
 export default function ProductList({products}) {
   // Return a list of products organized in a three-column grid.
   return (

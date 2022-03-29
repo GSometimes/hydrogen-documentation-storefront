@@ -1,9 +1,9 @@
 import {
-  // The `useShopQuery` hook makes server-only GraphQL queries to the Storefront API.
+  // The `useShopQuery` hook makes server-only GraphQL queries to the Storefront API
   useShopQuery,
   // The `flattenConnection` utility takes Shopify storefront relay data
   // and transforms it into a flat array of objects.
-  flattenConnection
+  flattenConnection,
 } from '@shopify/hydrogen';
 // Import the `Layout` component that defines the structure of the page.
 import Layout from '../components/Layout.server';
@@ -33,12 +33,12 @@ export default function Index() {
 // Define the GraphQL query.
 const QUERY = gql`
   query HomeQuery {
-    products(first: 10) {
+    products(first: 15) {
       edges {
         node {
           handle
           id
-          media(first: 10) {
+          media(first: 15) {
             edges {
               node {
                 ... on MediaImage {
@@ -97,4 +97,4 @@ const QUERY = gql`
       }
     }
   }
-`
+`;
